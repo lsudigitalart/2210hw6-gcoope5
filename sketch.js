@@ -84,9 +84,9 @@ function draw(){
 {
   r = r + 1;
 
-     image(img);
-     rotate(r);
-     scale(s);
+  image(img);
+  rotate(r);
+  scale(s);
 
 
   image(img1);
@@ -182,13 +182,25 @@ function draw(){
 
 }
 
+function mousePressed() {
+  loop();
+}
+
+function mouseReleased() {
+  noLoop();
+}
+
+// function mousePressed() {
+//     image(img);
+//   }
+
 // function mousePressed(){
 //
 //   imageIndex = int(random(images.length));
 //
 //     // imageSprite = createSprite(mouseX, mouseY, random(50), random(500));
 //     // imageSprite.addImage(img);
-//
+
 //     // img.velocity.x = random(-50, 50);
 //     // img.velocity.y = random(-50, 50);
 // }
